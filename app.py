@@ -1,6 +1,9 @@
-from flask import Flask, app, render_template, request, redirect, url_for, flash, jsonify
+from flask import Flask, app, render_template
 
 app = Flask(__name__)
+
+#Routes
+from user import routes
 
 @app.route('/')
 def index():
